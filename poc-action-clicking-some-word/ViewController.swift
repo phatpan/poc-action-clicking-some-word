@@ -14,10 +14,10 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupTextConditionEN()
+    setupTextCondition()
   }
 
-  func setupTextConditionEN() {
+  func setupTextCondition() {
     let highlightedText = "นโยบายความเป็นส่วนตัว"
     demoLabel.attributedText = makeTextCondition(conditionText: demoLabel.text!, highlightedText: highlightedText)
     let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
