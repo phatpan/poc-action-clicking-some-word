@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="poc_action_clicking_some_word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCi-rK-2b2">
+                                <rect key="frame" x="15" y="94" width="384" height="708"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-KT-ZCP">
+                                        <rect key="frame" x="15" y="15" width="354" height="183"/>
+                                        <viewLayoutGuide key="safeArea" id="kVV-PG-MBs"/>
+                                        <mutableString key="text">หากท่านได้ให้ข้อมูลส่วนบุคคลของบุคคลที่สามแก่เรา (เช่น ผู้รับผลประโยชน์ ผู้ติดต่อฉุกเฉิน บคคลที่อ้างอิง และผู้อ้างอิง)  เช่น ชื่อ นามสกุล ที่อยู่ หมายเลขโทรศัพท์ รายได้ของบุคคลในครอบครัว และข้อมูลส่วนตัวและข้อมูลเพื่อการติดต่ออื่นเพื่อติดต่อในกรณีฉุกเฉิน กรอกใบสมัครหรือทำธุรกรรมของคุณกับเรา กรุณาแจ้งบุคคลเหล่านั้นให้ทราบถึงนโยบายความเป็นส่วนตัวฉบับนี้ และ/หรือขอความยินยอมจากบุคคลเหล่านั้น </mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Doe-KT-ZCP" firstAttribute="top" secondItem="bCi-rK-2b2" secondAttribute="top" constant="15" id="1HS-Ex-h4B"/>
+                                    <constraint firstItem="Doe-KT-ZCP" firstAttribute="leading" secondItem="bCi-rK-2b2" secondAttribute="leading" constant="15" id="3IM-bp-td2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Doe-KT-ZCP" secondAttribute="trailing" constant="15" id="5on-4s-eUr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bCi-rK-2b2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6JY-yN-Iyb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bCi-rK-2b2" secondAttribute="trailing" constant="15" id="CGA-J3-QDX"/>
+                            <constraint firstItem="bCi-rK-2b2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EkX-NU-1sD"/>
+                            <constraint firstItem="bCi-rK-2b2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="TRB-et-g7R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="demoLabel" destination="Doe-KT-ZCP" id="YEL-uY-RaP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
